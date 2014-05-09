@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.ComponentModel.DataAnnotations;
-namespace ApplicantSurveyApp {
+namespace ApplicantSurveyApp.Mvc.Dal {
 
     [MetadataType(typeof(QuestionMetaData))]
     public partial class Question {

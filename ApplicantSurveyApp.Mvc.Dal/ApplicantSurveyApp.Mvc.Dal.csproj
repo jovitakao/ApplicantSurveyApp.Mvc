@@ -66,6 +66,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ApplicantSurveyAppModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="DataValidations\Applicant.cs" />
+    <Compile Include="DataValidations\ImageDetail.cs" />
+    <Compile Include="DataValidations\Question.cs" />
+    <Compile Include="DataValidations\Survey.cs" />
     <Compile Include="ImageDetail.cs">
       <DependentUpon>ApplicantSurveyAppModel.tt</DependentUpon>
     </Compile>
