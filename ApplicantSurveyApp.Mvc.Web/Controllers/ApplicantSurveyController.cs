@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using ApplicantSurveyApp.Mvc.Dal;
 
 namespace ApplicantSurveyApp.Mvc.Web.Controllers
 {
@@ -19,6 +20,16 @@ namespace ApplicantSurveyApp.Mvc.Web.Controllers
 			return View();
 		}
 
+        [HttpPost]
+        public ActionResult CreateApplicant(Applicant applicant)
+        {
+            return RedirectToAction("SurveyQuestion", applicant);
+        }
 
+
+        public ActionResult SurveyQuestion(Applicant applicant)
+        {
+            return RedirectToAction("CreateApplicant");
+        }
     }
 }
